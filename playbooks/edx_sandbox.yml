@@ -23,7 +23,6 @@
       - cms
       - lms
       - forum
-      - ora
       - xqueue
       nginx_default_sites:
       - lms
@@ -31,10 +30,9 @@
     - mongo
     - { role: 'edxapp', celery_worker: True }
     - edxapp
-    - demo
+    #- demo
     - { role: 'rabbitmq', rabbitmq_ip: '127.0.0.1' }
     - oraclejdk
     - elasticsearch
     - forum
-    - ora
     - xqueue
